@@ -1,0 +1,191 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#outer {
+    position: relative;
+    width: 1100px;
+    height: 100px;
+    margin: 0 auto;
+    background: grey;
+    background-image: url(pattern.png);
+    background-repeat: repeat, no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+
+#swapper {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    margin-top: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    font-variant: small-caps;
+    font-stretch: ultra-expanded;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#search {
+    position: absolute;
+    left: 322px;
+    margin-top: 50px;
+    width: 360px;
+    height: 100px;
+
+}
+
+#option {
+    position: absolute;
+    right: 0px;
+    width: 150px;
+    height: 40px;
+    margin: 0;
+}
+
+#option ul li {
+    display: inline;
+    padding: 5px;
+}
+
+#sign {
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    width: 460px;
+    height: 68px;
+}
+
+#menu {
+    position: relative;
+    width: 225px;
+    height: 600px;
+    margin: 75px;
+    background: grey;
+    background-image: url(pattern.png);
+    background-repeat: repeat, no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+
+#kategorie {
+    color: rgb(39, 39, 39);
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 20px;
+    text-decoration: underline;
+    text-decoration-color: rgb(216, 233, 184);
+    text-underline-offset: 3px;
+}
+
+#menu ul {
+    position: absolute;
+    list-style: none;
+    margin-top: 60px;
+    margin-left: 15px;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+
+#menu li a{
+    color: rgb(39, 39, 39);
+    display: block;
+    text-transform: uppercase;
+    
+    letter-spacing: 1px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#menu:hover li a{
+    color: rgb(94, 94, 94)
+}
+
+#menu li a:hover{
+    color: rgb(216, 233, 184);
+    text-shadow: 0 0 1px rgb(216, 233, 184);
+    padding-left: 10px;
+}
+
+#fsearch {
+    font-family: calibri; 
+    letter-spacing: -1px; 
+    font-size: 1em; 
+    padding: 2px; 
+    color: gray;
+}
+
+#fsign {
+    font-family: calibri;
+    font-size: 15px;
+    
+    color: grey;
+}
+ 
+#fsearch input {
+    float: left; 
+    border: 0; 
+    margin: 0; 
+    background: none;
+}
+
+#fsign input {
+    border: 0;
+    padding: 2px;
+    background: none;
+}
+#fsign {
+    border-radius: 3px;
+    padding: 1px;
+    position: absolute;
+}
+
+form #szukaj {
+    box-shadow: 0 0 5px silver inset;
+    -moz-outline: none; -webkit-outline: none; -o-outline: none; outline: none;
+    border-radius: 3px 0 0 3px; 
+    }
+
+form #wyslij {
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    text-shadow: 0 0 1px rgb(216, 233, 184);
+    background: rgb(241, 241, 241);
+    color: grey;
+}
+
+form #wyslij:hover {
+    text-shadow: 0 0 1px rgb(241, 241, 241);
+    background:rgb(216, 233, 184);
+}    
+ 
+form #szukaj, #fsign {
+background: #f2f2f2;
+background: -moz-linear-gradient(top, #f2f2f2 1%, #d6d6d6 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#f2f2f2), color-stop(100%,#d6d6d6));
+background: -webkit-linear-gradient(top, #f2f2f2 1%,#d6d6d6 100%);
+background: -o-linear-gradient(top, #f2f2f2 1%,#d6d6d6 100%);
+background: -ms-linear-gradient(top, #f2f2f2 1%,#d6d6d6 100%);
+background: linear-gradient(to bottom, #f2f2f2 1%,#d6d6d6 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#d6d6d6',GradientType=0 );
+}
+
+ 
+
+
+
+
+
+
