@@ -186,7 +186,6 @@ form #szukaj,
   color: rgb(39, 39, 39);
   display: block;
   text-transform: uppercase;
-
   letter-spacing: 1px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -204,7 +203,7 @@ form #szukaj,
   padding-left: 10px;
 }
 
-#content {
+#container {
   background-image: url(./photos/tlo.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -214,6 +213,7 @@ form #szukaj,
   min-height: 870px;
   overflow: hidden;
   padding-top: 50px;
+  display: flex;
 }
 
 footer {
@@ -278,6 +278,20 @@ h5 {
   position: absolute;
   bottom: 0;
   background-color: grey;
+}
+
+#content {
+  height: 600px;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  margin: 0 50px;
+}
+#content nav {
+  cursor: pointer;
+}
+#bottombox {
+  width: 60%;
 }
 
 /* todo */

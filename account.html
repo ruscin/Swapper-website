@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swapper</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div id="swapper">Swapper</div>
+
+      <div id="useroptions">
+        <div id="option">
+          <ul>
+            <li>
+              <a href="add.html"><img src="./photos/add.png" height="20" /></a>
+            </li>
+            <li>
+              <a href="#"> <img src="./photos/user.png" height="20" /></a>
+            </li>
+            <li>
+              <a href="./photos/shopping-cart.png">
+                <img src="./photos/shopping-cart.png" height="20"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div id="inputs">
+          <div id="search">
+            <form id="fsearch">
+              <input type="text" id="szukaj" />
+              <input type="submit" value="Szukaj" id="wyslij" />
+            </form>
+          </div>
+          <div id="sign">
+            <form id="fsign">
+              login:
+              <input type="text" name="login" required="required" id="login" />
+              hasło:
+              <input
+                type="password"
+                name="password"
+                required="required"
+                id="password"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="container">
+      <div id="menu">
+        <h3 id="kategorie">Kategorie</h3>
+        <ul>
+          <li><a class="category" href="#">Kategoria 1</a></li>
+          <br />
+          <li><a class="category" href="#">Kategoria 2</a></li>
+          <br />
+          <li><a class="category" href="#">Kategoria 3</a></li>
+          <br />
+          <li><a class="category" href="#">Kategoria 4</a></li>
+          <br />
+          <li><a class="category" href="#">Kategoria 5</a></li>
+          <br />
+          <li><a class="category" href="#">Kategoria 6</a></li>
+          <br />
+          <li><a class="category" href="#">Kategoria 7</a></li>
+          <br />
+        </ul>
+      </div>
+      <section id="content">
+        <!-- <h4>Rejestracja</h4> -->
+        <div id="topbox">
+          <nav>
+            <a onclick="tabs(0)" class="tab" active> Dane ogólne </a>
+            <a onclick="tabs(1)" class="tab"> Dane dostawy </a>
+            <a onclick="tabs(2)" class="tab"> Moje produkty </a>
+          </nav>
+        </div>
+        <div id="bottombox">
+          <div class="profileinfo tabShow">
+            <h3>Imię:</h3>
+            <input type="text" name="username" required="required" />
+            <h3>Nazwisko:</h3>
+            <input type="text" name="username" required="required" />
+            <h3>Nazwa użytkownika:</h3>
+            <input type="text" name="username" required="required" />
+            <h3>Hasło:</h3>
+            <input type="password" name="password" required="required" />
+            <h3>Powtórz hasło:</h3>
+            <input type="password" name="password_rep" required="required" />
+            <h3>Email:</h3>
+            <input type="email" name="user_email" required="required" />
+            <button>Zapisz zmiany</button>
+          </div>
+          <div class="addressinfo tabShow">
+            <h2>Adres wysyłki</h2>
+            <h3>Kraj:</h3>
+            <input type="text" name="username" required="required" />
+            <h3>Miasto:</h3>
+            <input type="text" name="username" required="required" />
+            <h3>Ulica:</h3>
+            <input type="password" name="password" required="required" />
+            <h3>Kod pocztowy:</h3>
+            <input type="password" name="password_rep" required="required" />
+            <button>Zapisz zmiany</button>
+          </div>
+          <div class="myproducts tabShow">
+            <h3>Nie dodano jeszcze żadnych produktów</h3>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <!-- TODO -->
+      <div id="footerinfo">
+        <div id="kontakt" class="footerinfo">
+          <h5>Kontakt</h5>
+          <p>
+            Email: swapper@gmail.com <br />
+            Infolinia: +48 668 745 888
+          </p>
+        </div>
+        <div id="helpcenter" class="footerinfo">
+          <h5>Centrum pomocy</h5>
+          <ul>
+            <li><a href="#">Pomoc</a></li>
+            <li><a href="#">Regulamin</a></li>
+            <li><a href="#">Zwroty i reklamacje</a></li>
+            <li><a href="#">Polityka plików "cookies"</a></li>
+            <li><a href="#">Polityka prywatności</a></li>
+          </ul>
+        </div>
+        <div id="newsletter" class="footerinfo">
+          <h5>Zapisz się do newslettera</h5>
+
+          <form>
+            <input type="email" name="email" required="required" id="email" />
+            <input type="submit" value="Zapisz się" />
+          </form>
+        </div>
+      </div>
+      <small id="copyright">
+        Copyright &copy
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Swapper
+      </small>
+    </footer>
+
+    <script scr="jquery/jquery.js"></script>
+    <script>
+      const button = document.querySelectorAll(".tab");
+      const page = document.querySelectorAll(".tabShow");
+
+      function tabs(index) {
+        page.forEach(function (node) {
+          node.style.display = "none";
+        });
+        page[index].style.display = "block";
+      }
+      tabs(0);
+    </script>
+  </body>
+</html>
