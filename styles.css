@@ -15,7 +15,7 @@ header {
   height: 120px;
   background: grey;
   background-image: url(./photos/pattern.png);
-  background-repeat: repeat, no-repeat;
+  background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   display: flex;
@@ -32,8 +32,8 @@ header {
   font-size: 55px;
   font-style: normal;
   font-weight: 900;
-  font-variant: small-caps;
-  font-stretch: ultra-expanded;
+ /* you don't need this line if you have "  text-transform: uppercase;" */
+ /* you don't want this line, beacuse it is not supported in many browsers */
   text-transform: uppercase;
 }
 
@@ -73,7 +73,7 @@ header {
 }
 
 #fsearch {
-  font-family: calibri;
+  font-family: calibri; /* why there is no class for font itself? */
   letter-spacing: -1px;
   font-size: 1em;
   padding: 2px;
@@ -160,7 +160,7 @@ form #szukaj,
   padding-top: 20px;
   background: grey;
   background-image: url(./photos/pattern.png);
-  background-repeat: repeat, no-repeat;
+  background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   text-align: center;
@@ -226,7 +226,7 @@ footer {
   background-color: darkgrey;
   display: flex;
   background-image: url(./photos/pattern.png);
-  background-repeat: repeat, no-repeat;
+  background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
 }
@@ -376,6 +376,6 @@ h5 {
   left: 30px;
 }
 
-/* todo */
+/* todo */ /*why not bootstrap 5 if it's simple project? */
 @media screen and (max-width: 1300px) {
 }
