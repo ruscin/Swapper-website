@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swapper</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div id="swapper">Swapper</div>
+
+      <div id="useroptions">
+        <div id="option">
+          <ul>
+            <li>
+              <a href="add.html"><img src="./photos/add.png" height="20" /></a>
+            </li>
+            <li>
+              <a href="#"> <img src="./photos/user.png" height="20" /></a>
+            </li>
+            <li>
+              <a href="./photos/shopping-cart.png">
+                <img src="./photos/shopping-cart.png" height="20"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div id="inputs">
+          <div id="search">
+            <form id="fsearch">
+              <input type="text" id="szukaj" />
+              <input type="submit" value="Szukaj" id="wyslij" />
+            </form>
+          </div>
+          <div id="sign">
+            <form id="fsign">
+              login:
+              <input type="text" name="login" required="required" id="login" />
+              hasło:
+              <input
+                type="password"
+                name="password"
+                required="required"
+                id="password"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="container">
+      <div id="menu">
+        <h3 id="kategorie">Kategorie</h3>
+        <ul>
+          <li><a class="category" href="#">Kategoria 1</a></li>
+          <br />
+          <li><a class="category" href="#">Kategoria 2</a></li>
+          <br />
+          <li><a class="category" href="#">Kategoria 3</a></li>
+          <br />
+          <li><a class="category" href="#">Kategoria 4</a></li>
+          <br />
+          <li><a class="category" href="#">Kategoria 5</a></li>
+          <br />
+          <li><a class="category" href="#">Kategoria 6</a></li>
+          <br />
+          <li><a class="category" href="#">Kategoria 7</a></li>
+          <br />
+        </ul>
+      </div>
+      <section id="content">
+        <div id="topbox">
+          <nav>
+            <a onclick="tabs(0)" class="tab" active>Dane ogólne</a>
+            <a onclick="tabs(1)" class="tab">Dane dostawy</a>
+            <a onclick="tabs(2)" class="tab">Moje produkty</a>
+          </nav>
+        </div>
+        <div id="bottombox">
+          <div class="profileinfo tabShow">
+            <form id="profileInfoForm">
+              <label for="name1"> Imię: </label>
+              <input type="text" name="name" id="name1" required="required" />
+              <label for="lastname1"> Nazwisko: </label>
+
+              <input
+                type="text"
+                name="lastname"
+                id="lastname1"
+                required="required"
+              />
+
+              <label for="username1"> Nazwa użytkownika: </label>
+              <input
+                type="text"
+                name="username"
+                id="username1"
+                required="required"
+              />
+
+              <label for="password1"> Hasło: </label>
+              <input
+                type="password"
+                name="password"
+                id="password1"
+                required="required"
+              />
+
+              <label for="password2"> Powtórz hasło: </label>
+              <input
+                type="password"
+                name="passwordRep"
+                id="password2"
+                required="required"
+              />
+
+              <label for="userEmail1"> Email: </label>
+              <input
+                type="email"
+                name="userEmail"
+                id="userEmail1"
+                required="required"
+              />
+
+              <label for="phoneNumber1"> Numer telefonu: </label>
+              <input type="tel" name="phoneNumber" id="phoneNumber1" />
+              <button type="submit">Zapisz zmiany</button>
+            </form>
+
+            <div id="userPhoto">
+              <img
+                id="myImg"
+                src="#"
+                alt="your image"
+                height="200"
+                width="160"
+              />
+              <input type="file" />
+            </div>
+          </div>
+          <form class="addressinfo tabShow">
+            <h2>Adres wysyłki</h2>
+
+            <label for="country1">Kraj:</label>
+            <input
+              type="text"
+              name="country"
+              id="country1"
+              required="required"
+            />
+            <label for="city1">Miasto:</label>
+            <input type="text" name="city" id="city1" required="required" />
+            <label for="street1">Ulica:</label>
+            <input type="text" name="street" id="street1" required="required" />
+            <label for="postalCode1">Kod pocztowy:</label>
+            <input
+              type="text"
+              name="postalCode"
+              id="postalCode1"
+              required="required"
+            />
+            <button type="submit">Zapisz zmiany</button>
+          </form>
+          <div class="myproducts tabShow">
+            <h3>Nie dodano jeszcze żadnych produktów</h3>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div id="footerinfo">
+        <div id="kontakt" class="footerinfo">
+          <h5>Kontakt</h5>
+          <p>
+            Email: swapper@gmail.com <br />
+            Infolinia: +48 668 745 888
+          </p>
+        </div>
+        <div id="helpcenter" class="footerinfo">
+          <h5>Centrum pomocy</h5>
+          <ul>
+            <li><a href="#">Pomoc</a></li>
+            <li><a href="#">Regulamin</a></li>
+            <li><a href="#">Zwroty i reklamacje</a></li>
+            <li><a href="#">Polityka plików "cookies"</a></li>
+            <li><a href="#">Polityka prywatności</a></li>
+          </ul>
+        </div>
+        <div id="newsletter" class="footerinfo">
+          <h5>Zapisz się do newslettera</h5>
+
+          <form>
+            <input type="email" name="email" required="required" id="email" />
+            <input type="submit" value="Zapisz się" />
+          </form>
+        </div>
+      </div>
+      <small id="copyright">
+        Copyright &copy
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Swapper
+      </small>
+    </footer>
+
+    <script>
+      const button = document.querySelectorAll(".tab");
+      const page = document.querySelectorAll(".tabShow");
+
+      function tabs(index) {
+        page.forEach(function (node) {
+          node.style.display = "none";
+        });
+        page[index].style.display = "flex";
+      }
+      tabs(0);
+    </script>
+  </body>
+</html>
