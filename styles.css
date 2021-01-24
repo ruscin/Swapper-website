@@ -52,7 +52,7 @@ header {
   display: inline;
 }
 
-#inputs {
+#inputs { 
   display: flex;
   align-items: center;
 }
@@ -88,7 +88,7 @@ header {
   padding: 1px;
   position: absolute;
 }
-
+/* this inputs should have same heigth, also if they have same background and borded they should have common class instead of two different ids */
 #fsearch input {
   float: left;
   border: 0;
@@ -100,6 +100,7 @@ header {
   padding: 2px;
   background: none;
 }
+
 
 #newsletter form {
   height: 100%;

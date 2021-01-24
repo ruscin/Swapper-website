@@ -37,14 +37,22 @@
           </div>
           <div id="sign">
             <form id="fsign">
+              <!-- I really recomend using bootstrap here (and on the whole webpage) so you don't have to care about css. if not then maybe flex grid like here:
+              https://www.w3schools.com/howto/howto_css_inline_form.asp
+              -->
               login:
-              <input type="text" name="login" required="required" id="login" />
+              <input 
+                required  
+                id="login"  
+                name="login" 
+                type="text" 
+              />
               hasło:
               <input
-                type="password"
-                name="password"
-                required="required"
+                required
                 id="password"
+                name="password"
+                type="password"
               />
             </form>
           </div>
@@ -77,8 +85,10 @@
         <div id="kontakt" class="footerinfo">
           <h5>Kontakt</h5>
           <p>
-            Email: swapper@gmail.com <br />
+            Email: swapper@gmail.com <br /> <!-- you should avoid putting email like that on your website. 
+            https://stackoverflow.com/questions/41318987/hide-email-address-from-bots-keep-mailto -->
             Infolinia: +48 668 745 888
+            <!--<a href="tel:+48 668 745 888">+48 668 745 888</a>-->
           </p>
         </div>
         <div id="helpcenter" class="footerinfo">
